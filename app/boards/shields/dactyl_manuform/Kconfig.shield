@@ -1,0 +1,13 @@
+# Copyright (c) 2022 Richard Clubb
+# SPDX-License-Identifier: MIT
+
+config SHIELD_DACTYL_MANUFORM
+    bool
+
+config SHIELD_DACTYL_MANUFORM_LEFT
+    def_bool $(shields_list_contains,dactyl_manuform_left)
+    select SHIELD_DACTYL_MANUFORM
+
+config SHIELD_DACTYL_MANUFORM_RIGHT
+    def_bool $(shields_list_contains,dactyl_manuform_right)
+    select SHIELD_DACTYL_MANUFORM
